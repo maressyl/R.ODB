@@ -27,19 +27,19 @@ All this material is freely distributed under the GNU Public License 3, shipped 
 Support
 -------
 
-Bugs, suggestions and help requests should be submitted using GitHub's **Issue** system, on the project page (see 'Availability').
+Bugs, suggestions and help requests should be submitted using GitHub's **Issues** (see 'Availability').
 
 
 Changelog
 ---------
 
-Release updates are tracked by the R package **NEWS.Rd** file system, browsable on the CRAN repository (see 'Availability').
+Release updates are tracked by the **NEWS.Rd** file, browsable on the CRAN repository (see 'Availability').
 
 Individual commits can be followed on GitHub (see 'Availability').
 
 
-Copyright & Credits
--------------------
+Credits
+---------
 
-Sylvain Mareschal <maressyl@gmail.com>
+Sylvain Mareschal <<maressyl@gmail.com>>
 
