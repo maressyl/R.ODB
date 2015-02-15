@@ -1,5 +1,11 @@
 \name{ODB-news}
 \title{ODB package NEWS}
+\section{Changes in version 1.2.0 (2015-02-15)}{
+  \itemize{
+	\item{README file added}
+	\item{Support web links updated}
+  }
+}
 \section{Changes in version 1.1.1 (2012-07-23)}{
   \itemize{
 	\item{Zip command check added before odb.close processing}
