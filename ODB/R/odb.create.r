@@ -25,7 +25,7 @@ odb.create = function(
 	
 	# Checks
 	if (is.null(template)) {
-		template = system.file("tools/template.odb", package="ODB")
+		template = system.file("template.odb", package="ODB")
 	}
 	if (!file.exists(template)) {
 		stop(call.=FALSE, "'template' file doesn't exist, it must be an .odb file")

@@ -7,6 +7,7 @@
     \item{Minor DESCRIPTION file updates to comply with new CRAN policies}
     \item{'ODB-package.Rd' updated to use the package meta-data macros}
     \item{Dependencies fixed in 'NAMESPACE'}
+    \item{Package file structure modified to meet the standard}
   }
 }
 \section{Changes in version 1.1.1 (2012-07-23)}{

@@ -21,7 +21,7 @@ odb.open = function(
 	{
 	# Default jarFile
 	if (is.null(jarFile)) {
-		jarFile <- system.file("tools/hsqldb.jar", package="ODB")
+		jarFile <- system.file("java/hsqldb.jar", package="ODB")
 	}
 	
 	# Normalized paths
