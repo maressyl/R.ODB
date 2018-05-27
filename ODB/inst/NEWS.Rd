@@ -9,6 +9,7 @@
     \item{Dependencies fixed in 'NAMESPACE'}
     \item{Package file structure modified to meet the standard}
     \item{'java' directory with URL to the java source code added}
+    \item{Template updated to last LibreOffice version (5.1.6.2)}
   }
 }
 \section{Changes in version 1.1.1 (2012-07-23)}{
