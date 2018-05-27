@@ -2,7 +2,7 @@ Package: ODB
 Type: Package
 Title: Open Document Databases (.odb) Management
 Version: 1.2.0
-Date: 2015-02-15
+Date: 2018-05-27
 Author: Sylvain Mareschal
 Maintainer: Sylvain Mareschal <maressyl@gmail.com>
 URL: http://bioinformatics.ovsa.fr/ODB

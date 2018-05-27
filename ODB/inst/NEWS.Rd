@@ -1,10 +1,11 @@
 \name{ODB-news}
 \title{ODB package NEWS}
-\section{Changes in version 1.2.0 (2015-02-15)}{
+\section{Changes in version 1.2.0 (2018-05-27)}{
   \itemize{
     \item{README file added}
     \item{Support web links updated}
     \item{Minor DESCRIPTION file updates to comply with new CRAN policies}
+    \item{'ODB-package.Rd' updated to use the package meta-data macros}
   }
 }
 \section{Changes in version 1.1.1 (2012-07-23)}{

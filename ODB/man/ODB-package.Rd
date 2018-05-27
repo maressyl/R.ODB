@@ -3,31 +3,25 @@
 \alias{ODB}
 \docType{package}
 \title{
-  Open Document Databases (.odb) management
+  \packageTitle{ODB}
 }
 
 \description{
-  This package provides functions to create, connect, update and query HSQL databases embedded in Open Document Databases (.odb) files, as OpenOffice and LibreOffice do.
+  \packageDescription{ODB}
 }
 
 \details{
-  \tabular{ll}{
-    Package: \tab ODB\cr
-    Type: \tab Package\cr
-    Version: \tab 1.0\cr
-    Date: \tab 2011-04-22\cr
-    License: \tab GPL 3\cr
-    LazyLoad: \tab yes\cr
-    Depends: \tab methods, DBI, RJDBC, XML\cr
-  }
+  The DESCRIPTION file:
+  \packageDESCRIPTION{ODB}
+  \packageIndices{ODB}
   
-  First notice this package is not intented to manage all .odb variations. Currently two distinct types of .odb files can be distinguished : files embedding an HSQL database, and files connecting to a remote database engine such as MySQL. This package is made for the formers, as remote database engines can be queried directly using the DBI package. Functions involving the XML content of the .odb file (\code{\link{odb.comments}} and \code{\link{odb.queries}}) may be operative on such files, but there is no garantee they would be.
+  First notice this package is not intented to manage all .odb variations. Currently two distinct types of .odb files can be distinguished : files embedding an HSQL database, and files connecting to a remote database engine such as MySQL. This package is made for the formers, as remote databases can be queried directly using the DBI package. Functions involving the XML content of the .odb file (\code{\link{odb.comments}} and \code{\link{odb.queries}}) may be operative on such files, but there is no garantee they would be.
   
-  You should not consider this package without minimal knowledge of the SQL language, as only the more basic operations have functions not relying on the user to build a valid SQL query (\code{\link{odb.insert}}, \code{\link{odb.tables}}, \code{\link{odb.comments}}, \code{\link{odb.queries}}).
+  You should not consider this package without minimal knowledge of the SQL language, as only a few basic operations have functions not relying on the user to build a valid SQL query (\code{\link{odb.insert}}, \code{\link{odb.tables}}, \code{\link{odb.comments}}, \code{\link{odb.queries}}).
   
-  This package is built around the \code{odb} class, which extends \code{DBIConnection}. A set of functions is provided to execute reading (SELECT ...) or writing (INSERT, CREATE, DROP ...) SQL queries through the HSQLDB engine, and a set of convenient tools is also provided for the more common tasks (\code{\link{odb.read}}, \code{\link{odb.write}}, \code{\link{odb.insert}}). A few Open Document specific functions are also provided, allowing modifications on features provided by the .odb file format and not the database itself (\code{\link{odb.comments}} and \code{\link{odb.queries}}).
+  This package is built around the \code{odb} class, which extends \code{DBIConnection}. A set of functions is provided to execute reading (SELECT ...) or writing (INSERT, CREATE, DROP ...) SQL queries through the HSQLDB engine, and a set of convenient tools is also provided for the most common tasks (\code{\link{odb.read}}, \code{\link{odb.write}}, \code{\link{odb.insert}}). A few Open Document specific functions are also provided, allowing modifications on features provided by the .odb file format and not the database itself (\code{\link{odb.comments}} and \code{\link{odb.queries}}).
   
-  Effects of all these functions can be achieved manually via the OpenOffice or LibreOffice Base softwares, obviously this package offers a way of making it automaticaly on a wider scale. Both manual and automatic modifications can be done on the same .odb file, but you are strongly recommended to not use the two methods simultaneously. This R package works on a copy of the file made at the \code{\link{odb.open}} call, and this copy will replace the original file at the \code{\link{odb.close}} call, regardless of what happened between the two calls.
+  Effects of all these functions can be achieved manually via the OpenOffice or LibreOffice Base software, obviously this package offers a way of automating it on a bigger scale. Both manual and automatic modifications can be done on the same .odb file, but users are strongly recommended to not use the two methods simultaneously. This R package works on a copy of the file made at the \code{\link{odb.open}} call, and this copy will replace the original file at the \code{\link{odb.close}} call, regardless of what happened between the two calls.
   
   Additional tools are also provided, notably \code{\link{odb.export}} and \code{\link{isClosed}}.
   
@@ -35,8 +29,12 @@
 }
 
 \author{
-  Sylvain Mareschal <maressyl@gmail.com>
+  \packageAuthor{ODB}
+
+  Maintainer: \packageMaintainer{ODB}
 }
+
+\keyword{ package }
 
 \examples{
 
@@ -93,3 +91,4 @@
   # And now ?
   print(isClosed(odb))
 }
+
