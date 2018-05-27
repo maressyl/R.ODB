@@ -132,7 +132,7 @@ setMethod(
 			)
 			
 			# Updates console
-			flush.console()
+			utils::flush.console()
 		}
 		
 		return(progress)
@@ -147,7 +147,7 @@ setMethod(
 		progress@iCurrent = iCurrent
 		
 		# New step time
-		progress@pTimes = tail(
+		progress@pTimes = utils::tail(
 			x = c(progress@pTimes, as.double(proc.time()['elapsed'])),
 			n = 20
 		)
@@ -176,7 +176,7 @@ setMethod(
 		)
 		
 		# Updates console
-		flush.console()
+		utils::flush.console()
 		
 		return(progress)
 	}
