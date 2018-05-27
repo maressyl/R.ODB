@@ -8,6 +8,7 @@
     \item{'ODB-package.Rd' updated to use the package meta-data macros}
     \item{Dependencies fixed in 'NAMESPACE'}
     \item{Package file structure modified to meet the standard}
+    \item{'java' directory with URL to the java source code added}
   }
 }
 \section{Changes in version 1.1.1 (2012-07-23)}{
