@@ -1,5 +1,10 @@
 \name{ODB-news}
 \title{ODB package NEWS}
+\section{Changes in version 1.2.1 (2020-03-10)}{
+  \itemize{
+    \item{isClosed() now complies with both old and new versions of RJDBC::dbSendUpdate}
+  }
+}
 \section{Changes in version 1.2.0 (2018-05-27)}{
   \itemize{
     \item{README file added}

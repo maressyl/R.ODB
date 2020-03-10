@@ -23,13 +23,19 @@ isClosed = function(
 		stop("'connection' must inherit from 'DBIConnection', or be an 'ODB' connection")
 	}
 	
-	# Test
-	closed = tryCatch(
-		dbSendUpdate(connection, ""),
-		error = function(e) {
-			return(grepl("Connection is closed", conditionMessage(e)))
-		}
-	)
+	# dbSendUpdate() returns TRUE on success (uses to return NULL)
+	isOpen <- try(dbSendUpdate(connection, ""), silent=TRUE)
+	if(is.null(isOpen)) isOpen <- TRUE
+	if(is(isOpen, "try-error")) {
+		cnd <- attr(isOpen, "condition")
+		if(conditionMessage(cnd) == "java.sql.SQLException: Connection is closed") {
+			# Connection is actually closed
+			isOpen <- FALSE
+		} else {
+			# Other error to let through
+			stop(cnd)
+		}		
+	}
 	
-	return(!is.null(closed))
+	return(!isOpen)
 }
