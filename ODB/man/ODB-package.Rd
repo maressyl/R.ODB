@@ -41,10 +41,11 @@
   ## CONNECTION ##
   
   # Creation of a new .odb database
-  odb.create("test.odb", overwrite="do")
+  odbFile <- tempfile(fileext=".odb")
+  odb.create(odbFile, overwrite="do")
 
   # Connection to the file
-  odb <- odb.open("test.odb")
+  odb <- odb.open(odbFile)
   
   
   ## STRUCTURE ##
@@ -77,7 +78,8 @@
   print(odb.read(odb, odb.queries(odb, "2nd record")))
   
   # SQL export
-  odb.export(odb, "test.sql")
+  sqlFile <- tempfile(fileext=".sql")
+  odb.export(odb, sqlFile)
   
   
   ## DISCONNECTION ##

@@ -56,8 +56,9 @@
 
 \examples{
   # New empty .odb file
-  odb.create("test.odb", overwrite="do")
-  ODB <- odb.open("test.odb")
+  odbFile <- tempfile(fileext=".odb")
+  odb.create(odbFile, overwrite="do")
+  ODB <- odb.open(odbFile)
   
   # New tables
   SQL <- c(

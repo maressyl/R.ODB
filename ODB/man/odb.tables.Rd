@@ -32,8 +32,9 @@
 
 \examples{
   # New empty .odb file
-  odb.create("test.odb", overwrite="do")
-  odb <- odb.open("test.odb")
+  odbFile <- tempfile(fileext=".odb")
+  odb.create(odbFile, overwrite="do")
+  odb <- odb.open(odbFile)
   
   # New tables
   SQL <- c(

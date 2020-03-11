@@ -45,8 +45,9 @@
 
 \examples{
   # New empty .odb file
-  odb.create("test.odb", overwrite="do")
-  odb <- odb.open("test.odb")
+  odbFile <- tempfile(fileext=".odb")
+  odb.create(odbFile, overwrite="do")
+  odb <- odb.open(odbFile)
   
   # Empty template
   print(odb.tables(odb))
@@ -60,8 +61,9 @@
   
   
   # Use as template
-  odb.create("test2.odb", template="test.odb", overwrite="do")
-  odb <- odb.open("test2.odb")
+  odbFile2 <- tempfile(fileext=".odb")
+  odb.create(odbFile2, template=odbFile, overwrite="do")
+  odb <- odb.open(odbFile2)
   print(odb.tables(odb))
   odb.close(odb, write=TRUE)
 }
