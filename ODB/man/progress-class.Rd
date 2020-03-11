@@ -82,8 +82,8 @@
 \examples{
   # File oriented progression
   testFun = function() {
-    obj <- new("progress.file", main="Iterating", iMax=50)
-    for(i in 1:50) {
+    obj <- new("progress.file", main="Iterating", iMax=20)
+    for(i in 1:20) {
       obj = set(obj, i)
       Sys.sleep(0.1)
     }
@@ -92,8 +92,8 @@
  
   # Console oriented progression
   testFun = function() {
-    obj <- new("progress.console", main="Iterating", iMax=50)
-    for(i in 1:50) {
+    obj <- new("progress.console", main="Iterating", iMax=20)
+    for(i in 1:20) {
       obj = set(obj, i)
       Sys.sleep(0.1)
     }
