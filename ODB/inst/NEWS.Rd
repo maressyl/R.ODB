@@ -1,5 +1,10 @@
 \name{ODB-news}
 \title{ODB package NEWS}
+\section{Changes in version 1.2.2 (2020-03-12)}{
+  \itemize{
+    \item{Reverted to old LibreOffice template to avoid 'corrupted file' errors}
+  }
+}
 \section{Changes in version 1.2.1 (2020-03-10)}{
   \itemize{
     \item{isClosed() now complies with both old and new versions of RJDBC::dbSendUpdate}
