@@ -3,6 +3,11 @@ ODB
 
 R package to create, query and update OpenDocument Database (.odb) files.
 
+![Github version](https://bioinformatics.ovsa.fr/badge.php?package=ODB)
+![CRAN version](https://www.r-pkg.org/badges/version-ago/ODB)
+![CRAN total downloads](https://cranlogs.r-pkg.org/badges/grand-total/ODB)
+![CRAN monthly downloads](https://cranlogs.r-pkg.org/badges/ODB)
+
 
 Availability
 ------------
