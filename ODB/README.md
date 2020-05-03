@@ -18,8 +18,8 @@ A short presentation of the project can be found on my personnal website.
 
 Release sources and builds can be found in the CRAN repository :
 
-* **WWW** : http://cran.r-project.org/web/packages/ODB/index.html
-* **R**   : install.packages("ODB")
+* **WWW** : https://CRAN.R-project.org/package=ODB
+* **R**   : `install.packages("ODB")`
 
 Development sources are freely available on GitHub :
 
