@@ -71,7 +71,7 @@
   odb.insert(odb, "fruits", dat)
   
   # Read content
-  print(odb.read(odb, "SELECT * FROM fruits"))
+  print(odb.read(odb, 'SELECT * FROM "fruits"'))
   
   # Writes to the file and closes the connection
   odb.close(odb, write=TRUE)
