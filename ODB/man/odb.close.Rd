@@ -5,7 +5,7 @@
 }
 
 \description{
-  Closes the connection to the embedded HSQLDB, removing temporary files and updating the .odb file if asked to do so.
+  Closes the connection to the embedded HSQLDB, removing temporary files, and updating the .odb file if asked to do so (which is the default).
 }
 
 \usage{
@@ -48,5 +48,5 @@
   odb.insert(odb, "fruits", c("banana", "pear", "peach"))
   
   # Writes to the file and closes the connection
-  odb.close(odb, write=TRUE)
+  odb.close(odb, write=TRUE) # This is equivalent to odb.close(odb)
 }
